@@ -5,6 +5,7 @@ const stripe = require('stripe')(process.env.stripe);
 
 // app config
 const app = express();
+const port = process.env.PORT || 3006;
 
 // middleware
 app.use(cors());
@@ -29,6 +30,6 @@ app.post('/payments/create', async (req, res) => {
 });
 
 // listen command
-app.listen(3006,()=>{
-    console.log("server is runing on port number 3006")
+app.listen(port,()=>{
+    console.log("server is runing on port number " + port)
 })
