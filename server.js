@@ -32,6 +32,6 @@ app.post('/payments/create', async (req, res) => {
 });
 
 // listen command
-app.listen(3005,()=>{
-    console.log("server is runing on port number 3005")
+app.listen(3006,()=>{
+    console.log("server is runing on port number 3006")
 })
